@@ -1,0 +1,23 @@
+{
+  "name": "gulp",
+  "description": "",
+  "main": "gulpfile.js",
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jQuery": "2.2.4",
+    "bootstrap": "4.0.0-beta",
+    "lightgallery": "^1.6.2",
+    "sweetalert": "^2.0.7",
+    "font-awesome": "^4.7.0",
+
+
+  }
+}

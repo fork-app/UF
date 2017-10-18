@@ -1,0 +1,617 @@
+@media (min-width: 576px) {
+  //SLIDER
+  .slider {
+    margin-bottom: 10px;
+    img {
+      max-height: 350px;
+    }
+  }
+
+  //BUTTON-BLOCK
+  .buttons-block {
+    .btn {
+      padding: 14px 34px;
+      font-size: 21px;
+    }
+  }
+}
+
+
+@media (min-width: 768px) {
+
+  //HEADER
+  .header {
+    position: fixed;
+    &-title {
+      margin-top: 10px;
+      text-align: left;
+      h2 {
+        font-size: 20px;
+      }
+      p {
+        font-size: 13px;
+      }
+    }
+    &-tel {
+      p {
+        font-size: 17px;
+      }
+    }
+    .choice-city {
+      margin-top: 10px;
+      span {
+        font-size: 14px;
+      }
+    }
+    .btn-wrapper {
+      &:first-child {
+        margin-top: 5px;
+      }
+      .btn-basket, .btn-delivery {
+        padding: 8px 20px;
+        font-size: 12px;
+      }
+    }
+    .header-mob-fixed {
+      &.fixed {
+        position: relative;
+        padding: 0;
+      }
+    }
+  }
+
+  //SLIDER
+  .slider {
+    margin-top: 120px;
+    img {
+      max-height: 600px;
+    }
+  }
+
+  //CATALOG-ITEM
+  .catalog {
+    .catalog-item {
+      .item-bottom-part {
+        text-align: left;
+        .item-name {
+          h5 {
+            font-size: 16px;
+          }
+          h6 {
+            font-size: 14px;
+          }
+        }
+        .btn-inner {
+          .btn-more-info, .btn-order {
+            font-size: 11px;
+          }
+          .btn-order {
+            .fa {
+              font-size: 20px;
+              margin-right: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  //APPLICATION-BLOCK
+  .application-block {
+    margin-bottom: 25px;
+    &__content {
+      .title {
+        text-align: left;
+        h3 {
+          font-size: 18px;
+        }
+        h5 {
+          font-size: 14px;
+        }
+      }
+      .application-form {
+        padding: 5px 10px;
+        .tel-input {
+          height: 34px;
+          padding: 6px 12px;
+          font-size: 14px;
+        }
+        .btn-application {
+          padding: 8px 16px;
+          font-size: 18px;
+        }
+        .personal-data {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+
+  //FOOTER
+  .footer {
+    p {
+      font-size: 14px;
+    }
+  }
+
+  //IMAGE-GALLERY
+  .lg {
+    width: 560px !important;
+    height: 560px !important;
+    top: 20% !important;
+    .lg-actions {
+      .lg-next, .lg-prev {
+        border: solid black;
+        border-width: 0 3px 3px 0;
+        padding: 6px;
+      }
+    }
+  }
+
+  //MODAL WINDOW GLOBAL
+  .modal {
+    .modal-dialog {
+      margin: 50px auto 0;
+    }
+  }
+
+  //MODAL MORE-INFO
+  .more-info-modal {
+    .modal-dialog {
+      .modal-content {
+        text-align: left;
+        padding: 0 20px;
+        .col-12 {
+          padding: 0 15px;
+        }
+        .modal-header {
+          padding: 15px 35px;
+          .modal-title {
+            font-size: 18px;
+          }
+        }
+        .modal-body {
+          padding: 15px 0;
+          .characteristics {
+            .char-row {
+              span {
+                font-size: 14px;
+              }
+              .btn-order {
+                .btn-title {
+                  font-size: 16px;
+                  line-height: 1.4;
+                }
+              }
+              .price {
+                p {
+                  font-size: 18px;
+                }
+              }
+            }
+            h5 {
+              font-size: 14px;
+              padding: 10px 0 0 0;
+            }
+            h6 {
+              font-size: 14px;
+            }
+            p {
+              font-size: 14px;
+              margin: 0;
+            }
+          }
+          .delivery {
+            text-align: left;
+          }
+        }
+        .modal-footer {
+          text-align: left;
+          p {
+            font-size: 14px;
+            margin: 0 0 10px 0;
+          }
+        }
+      }
+    }
+  }
+
+  //MODAL CHOICE COLOR (ORDER)
+  .modal-order {
+    margin: auto;
+    .modal-dialog {
+      width: 700px;
+      .modal-header {
+        p {
+          font-size: 20px;
+        }
+      }
+      .modal-body {
+        padding: 0;
+        border: none;
+        .order-item {
+          border-bottom: 1px dashed rgb(0, 0, 0);
+          .col-12 {
+            padding: 0 10px;
+            display: flex;
+          }
+          p {
+            font-size: 20px;
+            padding: 5px;
+            display: flex;
+            align-self: center;
+            width: 100%;
+          }
+          .btn-inner {
+            display: flex;
+            align-self: center;
+            .btn-order {
+              .btn-title {
+                font-size: 14px;
+                padding: 0;
+              }
+
+              &:hover, &:active {
+                background-color: $green;
+                border-color: $white;
+                color: $white;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  //MODAL BASKET
+  #basket {
+    .modal-dialog {
+      .modal-content {
+        &.empty-basket {
+          .modal-body {
+            .empty-basket-content {
+              img {
+                max-height: 260px;
+              }
+              h4 {
+                font-size: 24px;
+              }
+            }
+          }
+        }
+
+        &.full-basket {
+          .modal-header {
+            justify-content: flex-start;
+            .basket-modal-title {
+              font-size: 16px;
+            }
+          }
+          .order-item {
+            p {
+              font-size: 16px;
+            }
+            .item-close {
+              right:1%;
+            }
+          }
+          .modal-footer {
+            padding: 20px;
+            text-align: left;
+            .delivery-area {
+              h6 {
+                font-size: 16px;
+              }
+            }
+            .btn-delivery-area {
+              justify-content: flex-end;
+              label {
+                font-size: 16px;
+              }
+            }
+            .total-price {
+              p {
+                font-size: 16px;
+              }
+              h6 {
+                font-size: 16px;
+              }
+            }
+            .btn-inner {
+              justify-content: flex-end;
+              padding: 20px 5px;
+              .btn-checkout {
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  //MODAL ORDERING
+  #ordering {
+    .modal-dialog {
+      .modal-content {
+        .modal-header {
+          h5 {
+            font-size: 16px;
+          }
+        }
+        .modal-body {
+          padding: 30px;
+          form {
+            .form-group {
+              label {
+                font-size: 16px;
+              }
+              .form-control {
+                font-size: 14px;
+                padding: 10px 15px;
+              }
+            }
+            .btn-submit {
+              font-size: 20px;
+              i {
+                font-size: 26px;
+              }
+            }
+            p {
+              font-size: 12px;
+            }
+          }
+
+        }
+      }
+    }
+  }
+
+  //MODAL PERSONAL DATA
+  #personal-data {
+    .modal-dialog {
+      .modal-content {
+        .modal-header {
+          h5 {
+            font-size: 16px;
+          }
+        }
+        .modal-body {
+          padding: 20px;
+          p {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+
+  //MODAL CHOICE THE CITY
+  #choice-city {
+    .modal-dialog {
+      .modal-content {
+        .modal-header {
+          padding: 25px;
+          .close {
+            top:10%;
+            font-size: 2em;
+          }
+        }
+        .modal-body {
+          padding: 0 30px 30px;
+          p {
+            font-size: 18px;
+            margin-bottom: 30px;
+          }
+          .choice-city-btn {
+            .btn-yes {
+              font-size: 16px;
+            }
+            .cities {
+              padding: 8px 20px;
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  //MODAL SWEET-ALERT (ADD TO BASKET)
+  .sweet-alert {
+    width: 600px;
+    left: calc(50% - 3em);
+    h2 {
+      font-size: 30px;
+      margin: 25px 0;
+    }
+    .btn {
+      padding: 10px 32px;
+      font-size: 17px;
+      margin: 26px 5px 0;
+    }
+  }
+}
+
+
+@media (min-width: 992px) {
+  //HEADER
+  .header {
+    &-title {
+      h2 {
+        font-size: 28px;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
+    &-tel {
+      justify-content: center;
+      p {
+        font-size: 22px;
+      }
+    }
+    .choice-city {
+      span {
+        font-size: 16px;
+      }
+    }
+    .btn-wrapper {
+      .btn-basket, .btn-delivery {
+        font-size: 14px;
+      }
+    }
+  }
+
+  //CATALOG-ITEM
+  .catalog {
+    .catalog-item {
+      margin: 25px;
+      .item-bottom-part {
+        padding: 10px 15px;
+        .item-name {
+          h5 {
+            font-size: 18px;
+          }
+          h6 {
+            font-size: 16px;
+          }
+        }
+        .btn-inner {
+          .btn-more-info, .btn-order {
+            font-size: 12px;
+          }
+          .btn-order {
+            .fa {
+              font-size: 23px;
+              margin-right: 9px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  //APPLICATION-BLOCK
+  .application-block {
+    &__content {
+      .title {
+        h3 {
+          font-size: 24px;
+        }
+        h5 {
+          font-size: 20px;
+        }
+      }
+      .application-form {
+        padding: 5px 35px;
+        .personal-data {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+  //MODAL DELIVERY AND PAYMENT
+  #delivery {
+    .modal-dialog {
+      .modal-content {
+        padding: 0 20px;
+        .modal-body {
+          padding: 20px;
+          h5 {
+            padding: 5px;
+          }
+          p {
+            font-size: 16px;
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+  .delivery {
+    font-size: 16px;
+    h5 {
+      font-size: 20px;
+    }
+    h6 {
+      font-size: 16px;
+    }
+  }
+
+  //MODAL MORE-INFO
+  .more-info-modal {
+    .modal-dialog {
+      .modal-content {
+        .modal-header {
+          .modal-title {
+            font-size: 20px;
+          }
+        }
+        .modal-body {
+          .characteristics {
+            .char-row {
+              span {
+                font-size: 16px;
+              }
+              .btn-order {
+                .btn-title {
+                  font-size: 18px;
+                }
+              }
+              .price {
+                p {
+                  font-size: 20px;
+                }
+              }
+            }
+            h5 {
+              font-size: 16px;
+            }
+            h6 {
+              font-size: 16px;
+            }
+            p {
+              font-size: 16px;
+            }
+          }
+        }
+        .modal-footer {
+          p {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media (min-width: 1200px) {
+  //HEADER
+  .header {
+    &-tel {
+      justify-content: flex-end;
+      p {
+        font-size: 26px;
+      }
+    }
+  }
+
+  //CATALOG-ITEM
+  .catalog {
+    .catalog-item {
+      .item-bottom-part {
+        .item-name {
+          h5 {
+            font-size: 24px;
+          }
+          h6 {
+            font-size: 22px;
+          }
+        }
+      }
+    }
+  }
+}

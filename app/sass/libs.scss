@@ -1,0 +1,13 @@
+/* Import libraries to this file */
+
+@import "../../bower_components/bootstrap/scss/bootstrap";
+@import "../../bower_components/lightslider/dist/css/lightslider.css";
+
+$fa-font-path: "../fonts/" !default;
+@import "../../bower_components/font-awesome/scss/font-awesome";
+
+$lg-path-fonts: '/fonts'!default;
+$lg-path-images: '/images'!default;
+@import "../../bower_components/lightgallery/src/sass/lightgallery";
+@import "../../bower_components/bootstrap-sweetalert/dist/sweetalert.css";
+
